@@ -1,6 +1,6 @@
 {
   "name": "@x2d/azure-func-http",
-  "version": "0.11.0",
+  "version": "0.11.1",
   "description": "NestJS Azure Functions HTTP adapter - Community-maintained fork by X2D. Enables NestJS applications to run seamlessly on Azure Functions with both Express-compatible and native routing options.",
   "author": "Kamil Mysliwiec",
   "maintainers": [
