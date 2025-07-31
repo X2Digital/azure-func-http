@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This is the **@nestjs/azure-func-http** package - an official NestJS adapter for Azure Functions HTTP triggers. It enables NestJS applications to run seamlessly on Azure Functions with both Express-compatible and native routing options.
+This is the **@x2d/azure-func-http** package - a community-maintained fork of the NestJS Azure Functions HTTP adapter. Originally created by the NestJS team, it is now maintained by X2D to ensure continued support and updates. It enables NestJS applications to run seamlessly on Azure Functions with both Express-compatible and native routing options.
 
 ## Repository Structure
 
@@ -93,7 +93,7 @@ npm run publish:next  # Publish with 'next' tag
 - **Native Mode**: Fast, lightweight routing optimized for Azure Functions
 
 ### 2. CLI Integration
-- Includes NestJS schematics for `nest add @nestjs/azure-func-http`
+- Includes NestJS schematics for `nest add @x2d/azure-func-http`
 - Auto-generates Azure Function configuration files
 - Customizable with flags like `--rootDir`, `--rootModuleFileName`
 
@@ -145,4 +145,4 @@ npm run publish:next  # Publish with 'next' tag
 - [NestJS Documentation](https://docs.nestjs.com/)
 - [Integration Tutorial](https://trilon.io/blog/deploy-nestjs-azure-functions)
 
-This package is maintained by the NestJS team and is production-ready for Azure Functions deployments.
+This package is now maintained by X2D as a community fork and is production-ready for Azure Functions deployments.
