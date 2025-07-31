@@ -1,3 +1,12 @@
+<!--
+  @x2d/azure-func-http
+  Originally created by Kamil Myśliwiec (https://github.com/kamilmysliwiec)
+  Currently maintained by X2D (https://github.com/X2Digital)
+  
+  This package is a community-maintained fork of the NestJS Azure Functions HTTP adapter,
+  preserving the original work while ensuring continued support and updates.
+-->
+
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
 </p>
@@ -26,12 +35,20 @@
 
 [Azure Functions](https://code.visualstudio.com/tutorials/functions-extension/getting-started) HTTP module for [Nest](https://github.com/nestjs/nest).
 
+## Maintainership
+
+This package is currently maintained by [X2D](https://github.com/X2Digital) as a community fork. We are committed to keeping this package updated, secure, and functional for the NestJS and Azure Functions community.
+
+### Original Work
+
+This package was originally created and authored by [Kamil Myśliwiec](https://twitter.com/kammysliwiec), the creator of NestJS. We maintain this fork with deep respect for the original work and continue to build upon the solid foundation provided.
+
 ## Installation
 
 Using the Nest CLI:
 
 ```bash
-$ nest add @nestjs/azure-func-http
+$ nest add @x2d/azure-func-http
 ```
 
 Example output:
@@ -58,17 +75,19 @@ You can read more about this integration [here](https://trilon.io/blog/deploy-ne
 If you don't need the compatibility with `express` library, you can use a native routing instead:
 
 ```typescript
+import { AzureHttpRouter } from '@x2d/azure-func-http';
+
 const app = await NestFactory.create(AppModule, new AzureHttpRouter());
 ```
 
-`AzureHttpRouter` is exported from `@nestjs/azure-func-http`. Since `AzureHttpRouter` doesn't use `express` underneath, the routing itself is much faster.
+`AzureHttpRouter` is exported from `@x2d/azure-func-http`. Since `AzureHttpRouter` doesn't use `express` underneath, the routing itself is much faster.
 
 ## Additional options
 
 You can pass additional flags to customize the post-install schematic. For example, if your base application directory is different than `src`, use `--rootDir` flag:
 
 ```bash
-$ nest add @nestjs/azure-func-http --rootDir app
+$ nest add @x2d/azure-func-http --rootDir app
 ```
 
 Other available flags:
